@@ -1,8 +1,6 @@
 // declare and define function here
 
-// declare and define function here
-
-console.log(mostFrequentChar("mississippi"))
+console.log(mostFrequentChar("bookeeper"))
 
 function mostFrequentChar(string)
 {
@@ -24,12 +22,15 @@ function mostFrequentChar(string)
                     currentcount++
                 }
             }
+        }
+        
             if (currentcount > mostcount)
             {
                 mostcount = currentcount
                 mostchar = tempchar
+                currentcount = 0
             }
-        }
+        
     }
     return mostchar
 }
